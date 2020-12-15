@@ -1,8 +1,8 @@
 # Correlation pattern recognition
 
 This is a project that I have implemented as part of my scientific work. It can be used to
-simulate correlation pattern recognition (CPR) in a coherent optical system (correlator) using various
-spatial light modulators (SLM).
+simulate correlation pattern recognition (CPR) in a coherent optical system (correlator)
+using various spatial light modulators (SLM).
 
 ## 1. Installing
 
@@ -10,7 +10,7 @@ Install **Python 3.x**.
 
 Clone repository and cd to project directory:
 ```shell
-git clone https://gitlab.com/_chiffa_/cpr_project
+git clone https://github.com/Chifffa/correlation_pattern_recognition.git
 cd cpr_project
 ```
 Install dependencies:
@@ -48,7 +48,8 @@ and code documentation.
 See `main.py` to create custom configurations.
 
 For classification of correlation signals a trained CNN model can be used. You can use
-trained model (`data/frozen_model.onnx`). Use (**this_github**) to train your own model.
+trained model (`data/frozen_model.onnx`).
+Use (**https://github.com/Chifffa/cnn_model_for_cpr**) to train your own model.
 
 ## 4. Prepare dataset
 
@@ -190,4 +191,4 @@ This project was used in my scientific work. There are all my publications here:
 6. Goncharov, D.S. Improving correlation method with convolutional neural networks
    / D.S. Goncharov, R.S. Starikov // arXiv preprint arXiv: 2004.09430. — 2020.
    
-All articles you can find here: https://www.researchgate.net/profile/Dmitriy_Goncharov4
+All articles you can find here: https://www.researchgate.net/profile/Dmitriy_Goncharov4.

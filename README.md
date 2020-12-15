@@ -114,7 +114,7 @@ import numpy as np
 from cpr import amplitude_holo
 holo = np.uint8(amplitude_holo(image, sample_level=8, scale=2))
 ```
-![alt text](data/examples_for_github/lenna_holo.bmp)
+![lenna_holo.bmp](data/examples_for_github/lenna_holo.bmp)
 
 - Restore hologram:
 ```python
@@ -125,7 +125,7 @@ holo_restored[holo_restored.shape[0] // 2, holo_restored.shape[1] // 2] = 0
 holo_restored = holo_restored - np.min(holo_restored)
 holo_restored = np.uint8(holo_restored / np.max(holo_restored) * 255)
 ```
-![alt text](data/examples_for_github/lenna_holo_restored_simple.bmp)
+![lenna_holo_restored_simple.bmp](data/examples_for_github/lenna_holo_restored_simple.bmp)
 
 - You can use phase mask to improve restoration quality:
 
@@ -140,11 +140,11 @@ holo_restored = np.uint8(holo_restored / np.max(holo_restored) * 255)
 ```
 This is how Fourier hologram looks like now:
 
-![alt text](data/examples_for_github/lenna_holo_with_phase_mask.bmp)
+![lenna_holo_with_phase_mask.bmp](data/examples_for_github/lenna_holo_with_phase_mask.bmp)
 
 And this is improved restoration:
 
-![alt text](data/examples_for_github/lenna_holo_restored_phase_mask.bmp)
+![lenna_holo_restored_phase_mask.bmp](data/examples_for_github/lenna_holo_restored_phase_mask.bmp)
 
 - Also you can create custom size of hologram:
 ```python
@@ -154,7 +154,7 @@ And this is improved restoration:
     holo_restored = holo_restored - np.min(holo_restored)
     holo_restored = np.uint8(holo_restored / np.max(holo_restored) * 255)
 ```
-![alt text](data/examples_for_github/lenna_holo_restored_experiment.bmp)
+![lenna_holo_restored_experiment.bmp](data/examples_for_github/lenna_holo_restored_experiment.bmp)
 
 See `holo_example.py` for full **lenna.bmp** processing.
 

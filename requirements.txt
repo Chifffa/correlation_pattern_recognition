@@ -1,0 +1,6 @@
+matplotlib
+numpy
+onnxruntime
+opencv-python==4.2.0.34
+pyyaml
+tqdm

@@ -1,0 +1,43 @@
+basic:
+  field_size_factor: 4
+  max_pixel: 255
+  default_sample_level: 8
+  measured_phase_path: 'data/phase.npy'
+  data_path: 'datasets'
+  default_save_path: 'results'
+  available_datasets: ['tanks', 'faces', 'cars', 'mnist_012', 'all']
+  available_metrics: ['peak', 'pce', 'cnn']
+  input_slm_types: ['amplitude', 'phase', 'amplitude_phase', 'dmd']
+  filter_slm_types: [null, 'amplitude', 'phase', 'amplitude_phase', 'dmd']
+  noise_types: [null, 'amplitude', 'phase']
+  phase_types: ['random', 'linear', 'quadratic', 'measured']
+  filter_types: ['ot_mach', 'minace', 'all']
+  model_path: 'data/frozen_model.onnx'
+
+default:
+  input:
+    input_slm_type: 'amplitude'
+    filter_slm_type: null
+    phase_depth: 2.0
+    noise_type: null
+    noise_level: 0.0
+    phase_type: 'random'
+  filter:
+    filter_type: 'all'
+    filter_slm_type: null
+    sample_level: 8
+    phase_depth: 2.0
+    noise_type: null
+    noise_level: 0.0
+    phase_type: 'random'
+    use_same_images_preprocessing: true
+    ot_mach_alpha: 1.0
+    ot_mach_beta: 1.0
+    minace_noise_level: 2.0
+    minace_nu: 0.0
+  post_processing:
+    metrics: ['peak', 'pce', 'cnn']
+    filter_slm_type: null
+    save_data: false
+    dataset_name: null
+    save_path: null
